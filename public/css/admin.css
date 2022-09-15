@@ -1,0 +1,137 @@
+.title {
+	font-family: var(--font-family-black);
+	font-size: 4.2vw;
+	text-align: center;
+	margin-block: 8vw 0;
+}
+
+.form {
+	width: 100vw;
+}
+
+.form__lbl {
+	font-family: var(--font-family-light);
+	font-size: 1.5vw;
+	width: 60vw;
+	display: block;
+	margin: 1.2vw auto .2vw auto;
+}
+
+.form__lbl-img {
+	color: var(--color-primary);
+	font-family: var(--font-family-medium);
+	font-size: 1.5vw;
+	padding: .5vw 2vw;
+	display: flex;
+	width: max-content;
+	margin: 1.2vw 19vw;
+	background: var(--color-white);
+	cursor: pointer;
+	transition: .4s all ease;
+}
+
+.form__lbl-img:hover {
+	background: var(--color-secundary);
+}
+
+.form__input {
+	font-family: var(--font-family-medium);
+	font-size: 2vw;
+	width: 60vw;
+	display: block;
+	margin-inline: auto;
+	padding-inline: 1vw;
+	height: 2.3vw;
+	border: 1px solid var(--color-white);
+	outline: none;
+}
+
+.form__message {
+	color: var(--color-secundary);
+	font-family: var(--font-family-light);
+	font-size: 1.5vw;
+	margin-block: 1.4vw;
+	display: block;
+	text-align: center;
+}
+
+.form__submit {
+	color: var(--color-white);
+	font-size: 1.8vw;
+	width: 17vw;
+	height: 2.8vw;
+	display: block;
+	background: var(--color-secundary);
+	outline: none;
+	border: 1px solid var(--color-secundary);
+	margin: 0 auto 50px auto;
+	cursor: pointer;
+	transition: .4s all ease;
+}
+
+.form__submit:hover {
+	color: var(--color-secundary);
+	background: var(--color-white);
+}
+
+.form__img {
+	display: none;
+}
+
+.form__textarea {
+	font-family: var(--font-family-medium);
+	font-size: 2vw;
+	width: 60vw;
+	margin-inline: 19vw;
+	resize: none;
+    overflow: hidden;
+	min-height: 500px;
+	max-height: 1000px;
+	padding: 1vw;
+	margin-block-end: 1vw;
+	border: 1px solid var(--color-white);
+	outline: none;
+}
+
+.access, .access__logout {
+	color: var(--color-white);
+	font-family: var(--font-famimly-light);
+	font-size: 3vw;
+	text-align: center;
+	text-decoration: none;
+	width: 50vw;
+	padding-block: 1vw;
+	display: block;
+	margin: 2vw auto;
+	background: var(--color-secundary);
+	border: 1px solid var(--color-secundary);
+}
+
+.access:hover {
+	color: var(--color-primary);
+	border: 1px solid var(--color-white);
+}
+
+.access__logout {
+	color: var(--color-primary);
+	background: var(--color-white);
+	border: 1px solid var(--color-white);
+}
+
+.access__logout:hover {
+	color: var(--color-secundary);
+	border: 1px solid var(--color-secundary);
+}
+
+@media screen and (max-width: 600px) {
+	/*Login*/
+	.title { font-size: 7vw; margin-block: 20vh 3vh; }
+	.form__lbl { font-size: 5vw; width: 80vw; margin-block: 15px 3px; }
+	.form__lbl-img { font-size: 5vw; margin-block: 15px 3px; margin-inline-start: 9vw; }
+	.form__input { width: 80vw; height: 6vw; font-size: 4.8vw; }
+	.form__textarea { width: 80vw; font-size: 4.8vw; margin-inline-start: 9vw; }
+	.form__message { font-size: 4vw; margin-block: 15px; }
+	.form__submit { font-size: 5vw; height: 8.6vw; width: 45vw; }
+	/*Home*/
+	.access, .access__logout { font-size: 5vw; width: 60vw; }
+}

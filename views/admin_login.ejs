@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="notranslate" />
+	<meta name="robots" content="noindex">
+	<title>Dekanor | Admin</title>
+	<link rel="icon" href="/resources/images/dekanor.ico">
+	<link rel="stylesheet" type="text/css" href="/resources/css/variables.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/admin.css">
+</head>
+<body>
+	<!-- Main -->
+	<h1 class="title">DEKANOR ADMIN</h1>
+	<form class="form" action="/admin/auth" method="POST"> 
+		<label class="form__lbl" for="user">EMAIL</label>
+		<input class="form__input" type="text" name="user" required>
+		<label class="form__lbl" for="password">CONTRASEÑA</label>
+		<input class="form__input" type="password" name="password" required>
+		<label class="form__lbl" for="password">CÓDIGO</label>
+		<input class="form__input" type="password" name="code" required>
+		<% if (message != 'none') { %>
+		<p class="form__message"><%= message %></p>
+		<% } else { %>
+		<p class="form__message"></p>
+		<% } %>
+		<input class="form__submit" type="submit">
+	</form>
+</body>
+</html>

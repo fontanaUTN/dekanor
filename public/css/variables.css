@@ -1,0 +1,59 @@
+@font-face{
+	font-family: helvetica-black;
+	src: url('../fonts/HelveticaNowText-Black.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: helvetica-bold;
+	src: url('../fonts/HelveticaNowText-Bold.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: helvetica-medium;
+	src: url('../fonts/HelveticaNowText-Medium.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: helvetica-regular;
+	src: url('../fonts/HelveticaNowText-Regular.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: helvetica-light;
+	src: url('../fonts/HelveticaNowText-Light.ttf') format('truetype');
+}
+
+* { 
+	margin: 0;
+ 	padding: 0;
+ 	font-family: helvetica-bold, sans-serif;
+ 	color: var(--color-white);
+ 	background: var(--color-primary);
+}
+
+:root {
+	--color-primary: #1f1e1f;
+	--color-secundary: #ad8866;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--font-family-black: 'helvetica-black';
+	--font-family-bold: 'helvetica-bold';
+	--font-family-medium: 'helvetica-medium';
+	--font-family-regular: 'helvetica-regular';
+	--font-family-light: 'helvetica-light';
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: var(--color-white);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(0deg, var(--color-primary), var(--color-primary), transparent);
+	border-radius: 5px;
+	margin-inline: 2px;
+}
+
+body {
+	overflow-x: hidden;
+}

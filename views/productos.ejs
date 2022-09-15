@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="notranslate" />
+	<meta name="title" content="Dekanor | Fungicidas, herbicidas, insecticidas y mas">
+	<meta name="description" content="Dekanor - Contamos con stock de fungicidas, herbicidas, coadyuvantes patrocinados por Bayer y FMC. Cripton, Adengo, Flumy, Guargian, entre otros.">
+	<meta name="keywords" content="dekanor, fungicidas, herbicidas, insecticidas, coadyuvantes, maíz, bayer, fmc, Cripton, Adengo, Flumy, Guargian">
+	<title>Dekanor | Fungicidas, herbicidas, insecticidas y mas</title>
+	<link rel="canonical" href="https://dekanor.com/productos">
+	<meta property="og:locale" content="en_AR">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Dekanor | Fungicidas, herbicidas, insecticidas y mas">
+	<meta property="og:description" content="Dekanor - Contamos con stock de fungicidas, herbicidas, coadyuvantes patrocinados por Bayer y FMC. Cripton, Adengo, Flumy, Guargian, entre otros.">
+	<meta property="og:url" content="https://dekanor.com/productos">
+	<meta property="og:site_name" content="Dekanor | Fungicidas, herbicidas, insecticidas y mas">
+	<meta property="og:image" content="https://dekanor.com/resources/images/dekanor.ico"/>
+	<meta property="og:image:width" content="800"/>
+	<meta property="og:image:height" content="800"/>
+	<link rel="icon" href="resources/images/dekanor.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" type="text/css" href="resources/css/variables.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/productos.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/header.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/footer.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-79KG1JGJ3Y"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-79KG1JGJ3Y');
+	</script>
+</head>
+<body>
+	<!-- Header -->
+	<%- include('templates/header') %>
+	<!-- Main -->
+	<main class="main">
+		<section class="main__content">
+			<span class="main__container">
+				<span class="main__titles">
+					<span class="main__d"></span>
+					<h1 class="main__title">BAYER</h1>
+				</span>
+				<a class="main__link" onclick="showProducts('fungicidas',fungicidas)"><h2 class="main__products">fungicidas</h2></a>
+				<a class="main__link" onclick="showProducts('herbicidas',herbicidas)"><h2 class="main__products">herbicidas</h2></a>
+				<a class="main__link" onclick="showProducts('insecticidas',insecticidas)"><h2 class="main__products">insecticidas</h2></a>
+				<a class="main__link" onclick="showProducts('coadyuvantes',coadyuvantes)"><h2 class="main__products">coadyuvantes</h2></a>
+				<a class="main__link" onclick="showProducts('maiz',maiz)"><h2 class="main__products">maíz</h2></a>
+			</span>
+			<span class="main__container">
+				<span class="main__titles">
+					<span class="main__d"></span>
+					<h2 class="main__title">FMC</h2>
+				</span>
+				<a class="main__link" onclick="showProducts('fungicidas',fungicidas)"><h2 class="main__products">fungicidas</h2></a>
+				<a class="main__link" onclick="showProducts('herbicidas',herbicidas)"><h2 class="main__products">herbicidas</h2></a>
+				<a class="main__link" onclick="showProducts('insecticidas',insecticidas)"><h2 class="main__products">insecticidas</h2></a>
+				<a class="main__link" onclick="showProducts('coadyuvantes',coadyuvantes)"><h2 class="main__products">coadyuvantes</h2></a>
+			</span>
+			<span class="main__container">
+				<span class="main__titles">
+					<span class="main__d"></span>
+					<h2 class="main__title">RESTO DEL PORTFOLIO</h2>
+				</span>
+				<a class="main__link" onclick="showProducts('fungicidas',fungicidas)"><h3 class="main__products">fungicidas</h3></a>
+				<a class="main__link" onclick="showProducts('herbicidas',herbicidas)"><h3 class="main__products">herbicidas</h3></a>
+				<a class="main__link" onclick="showProducts('insecticidas',insecticidas)"><h3 class="main__products">insecticidas</h3></a>
+				<a class="main__link" onclick="showProducts('coadyuvantes',coadyuvantes)"><h3 class="main__products">coadyuvantes</h3></a>
+			</span>
+		</section>
+		<a class="main__phone" href="https://wa.me/5493731407634">Consultar stock</a>
+	</main>
+	<section class="product">
+		<h3 class="product__title"></h3>
+		<span class="product__content">
+		</span>
+		<a class="product__btn" onclick="closeProducts()">Cerrar</a>
+	</section>
+	<!-- Footer -->
+	<%- include('templates/footer') %>
+	
+	<script src="resources/scripts/header.js"></script>
+	<script src="resources/scripts/productos.js"></script>
+</body>
+</html>
